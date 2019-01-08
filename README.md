@@ -6,3 +6,7 @@ Basic application to calculate a suggested tip to be left per person or as a gro
 
 - Styling
 - Input validation
+
+## Preview
+
+https://github.com/Fazyyy?tab=repositories
