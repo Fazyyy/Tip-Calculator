@@ -9,4 +9,4 @@ Basic application to calculate a suggested tip to be left per person or as a gro
 
 ## Preview
 
-https://github.com/Fazyyy?tab=repositories
+https://fazyyy.github.io/Tip-Calculator
