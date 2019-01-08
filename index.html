@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <section class="container main">
+        <header class="title">
+            <h1>Tip Calculator</h1>
+        </header>
+        <div class="calcBody">
+            
+            <p>How much was your bill?</p>
+            <div class="inline">
+                <p>£</p><input type="number" name="cost" min="1" id="totalCost" step="0.01">
+            </div>
+
+            <p>How was your service?</p>
+            <select id="serviceDrop">
+                <option value="1">20&#37; &#45; Excellent!</option>
+                <option value="2">15&#37; &#45; Great</option>
+                <option value="3">10&#37; &#45; Average</option>
+                <option value="4">5&#37; &#45; Poor</option>
+            </select> 
+
+            <p>How many people are sharing the bill?</p>
+            <input type="number" name="people" id="peopleAmountInput" min="1" />
+
+            <button onclick="calculateTip()">Calculate!</button>
+
+            <div class="result">
+                <p>You should tip a total of:</p>
+                <p>£<span id="totalTip">0.00</span></p>
+                <p>Between <span id="peopleAmount">4</span> people, that is £<span id="tipPer">0.00</span>* each.</p>
+                <p>*Rounded to the nearest 10p for convenience.</p>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js" type="text/javascript" async></script>
+  </body>
+</html>
