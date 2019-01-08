@@ -36,10 +36,16 @@
             <button onclick="calculateTip()">Calculate!</button>
 
             <div class="result">
-                <p>You should tip a total of:</p>
-                <p>£<span id="totalTip">0.00</span></p>
-                <p>Between <span id="peopleAmount">4</span> people, that is £<span id="tipPer">0.00</span>* each.</p>
-                <p>*Rounded to the nearest 10p for convenience.</p>
+                <h2>Totals</h2>
+                <p>Meal: £<span id="mealCost">0.00</span></p>
+                <p>Tip: £<span id="totalTip">0.00</span></p>
+                <p>Total: £<span id="totalAndTip">0.00</span></p>
+                <h3>Per person</h3>
+                <p>Splitting the cost between <span id="peopleAmount">4</span> means each person would pay:</p>
+                <p>Meal: £<span id="mealCostPer">0.00</span></p>
+                <p>Tip: £<span id="tipPer">0.00</span></p>
+                <p>Total: £<span id="totalPer">0.00</span></p>
+                <!--<p>*Rounded to the nearest 10p for convenience.</p>-->
             </div>
         </div>
     </section>

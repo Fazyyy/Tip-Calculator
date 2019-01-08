@@ -18,14 +18,24 @@ function calculateTip() {
     if (noOfPeople >= 5) {
         totalTip++;
     }
-
+    
     //Calculate tip per person and round up to 10p
     var indTip = Math.round( (totalTip / noOfPeople) * 10 ) / 10;
+
+    var overallTotal = ( 1 * totalCost ) + ( 1 * totalTip );
+    var mealPer = ( 1 * totalCost ) / ( 1 * noOfPeople )
+    var totalPer = mealPer + indTip;
+
     
     //Output values
     document.getElementById("peopleAmount").innerHTML = noOfPeople;
     document.getElementById("totalTip").innerHTML = totalTip.toFixed(2);
     document.getElementById("tipPer").innerHTML = indTip.toFixed(2);
+    document.getElementById("mealCost").innerHTML = totalCost;
+    document.getElementById("totalAndTip").innerHTML = overallTotal.toFixed(2);
+    document.getElementById("mealCostPer").innerHTML = mealPer.toFixed(2);
+    document.getElementById("totalPer").innerHTML = totalPer.toFixed(2);
+    
   }
 
 
